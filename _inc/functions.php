@@ -38,11 +38,13 @@ function mailplatform_checkApiUsername() {
  *
  * @return \SimpleXMLElement
  */
-function mailplatform_xmlrequest($requesttype, $requestmethod, $details) {
+function mailplatform_xmlrequest($requesttype, $requestmethod, $details, $count = false) {
 
     $username = get_option('mailplatform_username');
     $token = get_option('mailplatform_token');
     $path = get_option('mailplatform_xml_path');
+
+    $details = $count ? "{$details}<countonly>true</countonly>" : $details;
 
     $xml = "<?xml version='1.0' encoding='UTF-8' ?><xmlrequest>
 	<username>{$username}</username>
@@ -59,7 +61,12 @@ function mailplatform_xmlrequest($requesttype, $requestmethod, $details) {
     $result = curl_exec($ch);
     curl_close($ch);
 
-    return new SimpleXMLElement($result);
+    if($count){
+        $count = (new SimpleXMLElement($result))->data;
+        return doubleval($count);
+    }else{
+        return new SimpleXMLElement($result);
+    }
 }
 
 /**

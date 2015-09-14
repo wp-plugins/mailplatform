@@ -43,8 +43,17 @@
 }
 
 .sidebar-box .tablenav {
-    height: 0;
-    margin: 0
+    padding:0 15px;
+}
+.sidebar-box .tablenav.top {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+.sidebar-box .tablenav.bottom {
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
+    padding-top: 15px;
 }
 
 .sidebar-box table.widefat {
@@ -55,6 +64,9 @@
 .sidebar-box input[type=text],
 .sidebar-box select {
     width: 100%;
+}
+.tablenav-pages input.current-page{
+    width: auto;
 }
 
 .sidebar-box.sidebar-dark {

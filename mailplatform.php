@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: MailPlatform
-Version:     1.1
+Version:     1.3
 License:     GPLv2 or later
 Author:      MailPlatform
 Author URI:  http://mailplatform.dk/
@@ -96,5 +96,5 @@ function mailplatform_shortcode( $atts ) {
 //===> ACTIONS <===\\
 add_action( 'admin_init', 'mailplatform_register_my_setting' );
 add_action( 'admin_menu', 'mailplatform_menu' );
-add_action( 'widgets_init', 'wpb_load_widget' );
+add_action( 'widgets_init', 'mailplatform_wpb_load_widget' );
 add_shortcode( 'mailplatform', 'mailplatform_shortcode' );

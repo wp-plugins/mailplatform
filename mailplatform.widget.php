@@ -74,8 +74,7 @@ class mailplatform_widget extends WP_Widget {
 } // Class mailplatform_widget ends here
 
 // Register and load the widget
-function wpb_load_widget() {
-
+function mailplatform_wpb_load_widget() {
     register_widget('mailplatform_widget');
 }
 
