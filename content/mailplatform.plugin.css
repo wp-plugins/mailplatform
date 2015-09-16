@@ -1,476 +1,441 @@
-.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 30px;
-    padding-left: 30px;
-}
-
-.wrap {
-    overflow: hidden
-}
-
-.row {
-    margin-right: -30px;
-    margin-left: -30px;
-    margin-top: 30px;
-}
-
-.row-table {
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.row:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
-
-.sidebar-box {
-    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, .15);
-    border-radius: 0 0 3px 3px;
-    border: 1px solid rgba(0, 0, 0, .1);
-    background: #fff;
-    padding: 15px;
-    margin-bottom: 30px;
-}
-
-.sidebar-box:last-child {
-    margin-bottom: 3px;
-}
-
-.sidebar-box .tablenav {
-    padding:0 15px;
-}
-.sidebar-box .tablenav.top {
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-}
-.sidebar-box .tablenav.bottom {
-    border-top: 1px solid #ddd;
-    margin-top: 15px;
-    padding-top: 15px;
-}
-
-.sidebar-box table.widefat {
-    border: 0;
-    box-shadow: none;
-}
-
-.sidebar-box input[type=text],
-.sidebar-box select {
-    width: 100%;
-}
-.tablenav-pages input.current-page{
-    width: auto;
-}
-
-.sidebar-box.sidebar-dark {
-    box-shadow: 0 2px 0px 0 rgba(250, 250, 250, .15);
-    border: 1px solid rgba(250, 250, 250, .1);
-    background: #282828;
-    color: #fafafa;
-}
-
-.sidebar-box .sidebar-header {
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-}
-
-.sidebar-box.sidebar-dark .sidebar-header {
-    border-bottom: 1px solid rgba(250, 250, 250, .1);
-}
-
-.sidebar-box h2 {
-    font-weight: 300;
-    font-size: 20px;
-}
-
-.sidebar-box.sidebar-dark h2 {
-    color: #fafafa;
-}
-
-.mp_input_group {
-
-}
-
-.mp_input_group:last-child {
-    margin-bottom: 0px;
-}
-
-.mp_input_group > label,
-.mp_input_group > div {
-    display: block;
-    padding: 8px 0;
-}
-
-.mp_input_group .mp_hover_label {
-    padding: 8px 3px 8px 8px;
-}
-
-.mp_input_group .mp_hover_label,
-.mp_checkbox_group label {
-    position: relative;
-}
-
-.mp_radio {
-    display: inline-block;
-    margin-right: 10px;
-    min-width: 80px;
-}
-
-.mp_radio input {
-    padding: 0;
-}
-
-.mp_checkbox_group label:after,
-.mp_checkbox_group label:before {
-    content: " ";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 47px;
-    height: 47px;
-    background-position: left center;
-    background-size: 14px;
-    background-repeat: no-repeat;
-}
-
-.mp_checkbox_group label.mp_hover_label:after,
-.mp_checkbox_group label.mp_hover_label:before {
-    left: 8px;
-}
-
-.mp_checkbox_group label:after {
-    display: none;
-    background-image: url(checked_checkbox.png);
-}
-
-.mp_checkbox_group label:before {
-    display: block;
-    background-image: url(unchecked_checkbox.png);
-}
-
-.mp_input_group .mp_hover_label:hover {
-    background: rgba(0, 0, 0, .05);
-}
-
-.mp_input_group input[type=checkbox] {
-    display: none;
-}
-
-.mp_input_group input[type=checkbox]:checked + .mp_hover_label {
-    background: #0073aa;
-    color: #fff;
-}
-
-.mp_input_group input[type=checkbox]:checked + .mp_hover_label input {
-    color: #fff;
-}
-
-.mp_input_group input[type=checkbox]:checked + .mp_hover_label:hover {
-    background: #006290;
-}
-
-.mp_checkbox_group input[type=checkbox]:checked + label:after {
-    display: block;
-}
-
-.mp_checkbox_group input[type=checkbox]:checked + label:before {
-    display: none;
-}
-
-.mp_input_group .mp_hover_label:after {
-    display: none;
-}
-
-.mp_input_group .mp_hover_label:before {
-    padding-left: 36px;
-}
-
-.mp_input_group p.helper {
-    margin: 0;
-}
-
-.mp_input_group .mp_label {
-    display: block;
-    float: left;
-    width: 15.6%;
-    line-height: 28px;
-    top: -1px;
-    position: relative;
-}
-
-.mp_input_group .mp_hover_label .mp_label {
-    width: 15%;
-}
-
-.mp_checkbox_group label .mp_label {
-    padding-left: 28px;
-    box-sizing: border-box;
-}
-
-.mp_input_group .mp_select {
-    display: inline-block;
-    width: 84%;
-}
-
-.mp_input_group .mp_select input,
-.mp_input_group .mp_select select {
-    outline: 0;
-    border: 0;
-    background: rgba(0, 0, 0, .05);
-}
-
-.mp_input_group .mp_select input.regular-text {
-    padding: 5px 8px;
-}
-
-.mp_input_group input[type=checkbox]:checked + label .mp_select select {
-    color: #fff;
-}
-
-.mp_input_group input[type=checkbox]:checked + label .mp_select select option {
-    color: #282828;
-    background: #fff;
-}
-
-pre.mp_message {
-    margin: 0;
-    margin-top: 5px;
-}
-
-.mp_message {
-    padding: 15px;
-    background: rgba(0, 0, 0, .05);
-    border: 1px solid rgba(0, 0, 0, .1);
-    margin-top: 30px;
-}
-
-.mp_message h3 {
-    padding: 0px;
-    margin: 0px;
-    color: #282828;
-}
-
-.mp_message small {
-    display: block;
-    font-style: italic;
-}
-
-.mp_message strong {
-    display: block;
-    text-transform: uppercase;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-    margin-bottom: 5px;
-    padding-bottom: 5px;
-    color: rgba(0, 0, 0, 1);
-}
-
-.mp_message.mp_error {
-    background: rgba(255, 104, 102, .1);
-    border-color: rgba(255, 104, 102, .2);
-}
-
-.mp_message.mp_error strong {
-    color: #BF4E4D;
-    border-color: rgba(255, 104, 102, .2);
-}
-
-.mp_message.mp_success {
-    background: rgba(48, 136, 48, .1);
-    border-color: rgba(48, 136, 48, .2);
-}
-
-.mp_message.mp_success strong {
-    color: rgba(48, 136, 48, 1);
-    border-color: rgba(48, 136, 48, .2);
-}
-
-.mp_dropdown_group {
-    position: relative;
-}
-
-.mp_dropdown_group .mp_dropdown {
-    position: absolute;
-    right: 4px;
-    top: 9px;
-    background: rgba(0, 0, 0, .1);
-    width: 29px;
-    height: 29px;
-    cursor: default;
-    background-position: center;
-    background-size: 14px;
-    background-repeat: no-repeat;
-    background-image: url(arrow.png);
-}
-
-.mp_dropdown_group .mp_dropdown ul {
-    position: absolute;
-    top: 29px;
-    right: 0;
-    display: none;
-    box-shadow: 0 2px 0px 0 rgba(0, 0, 0, .15);
-    border-radius: 0 0 3px 3px;
-    border: 1px solid rgba(0, 0, 0, .1);
-    background: #fff;
-    margin: 0;
-    border-top: 0;
-    width: 300px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    max-height: 400px;
-}
-
-.mp_dropdown_group .mp_dropdown ul li {
-    display: block;
-    margin: 0;
-}
-
-.mp_dropdown_group .mp_dropdown ul li:last-child a {
-    border-radius: 0 0 3px 3px;
-}
-
-.mp_dropdown_group .mp_dropdown ul li a {
-    display: block;
-    text-decoration: none;
-    color: #282828;
-    padding: 5px;
-}
-
-.mp_dropdown_group .mp_dropdown ul li a:hover {
-    background: rgba(0, 0, 0, .1);
-}
-
-.mp_dropdown_group .mp_dropdown:hover ul {
-    display: block;
-
-}
-
-.col-md-4 img {
-    max-width: 100%;
-}
-
+#mailplatform_wrapper .col-lg-1,
+#mailplatform_wrapper .col-lg-10,
+#mailplatform_wrapper .col-lg-11,
+#mailplatform_wrapper .col-lg-12,
+#mailplatform_wrapper .col-lg-2,
+#mailplatform_wrapper .col-lg-3,
+#mailplatform_wrapper .col-lg-4,
+#mailplatform_wrapper .col-lg-5,
+#mailplatform_wrapper .col-lg-6,
+#mailplatform_wrapper .col-lg-7,
+#mailplatform_wrapper .col-lg-8,
+#mailplatform_wrapper .col-lg-9,
+#mailplatform_wrapper .col-md-1,
+#mailplatform_wrapper .col-md-10,
+#mailplatform_wrapper .col-md-11,
+#mailplatform_wrapper .col-md-12,
+#mailplatform_wrapper .col-md-2,
+#mailplatform_wrapper .col-md-3,
+#mailplatform_wrapper .col-md-4,
+#mailplatform_wrapper .col-md-5,
+#mailplatform_wrapper .col-md-6,
+#mailplatform_wrapper .col-md-7,
+#mailplatform_wrapper .col-md-8,
+#mailplatform_wrapper .col-md-9,
+#mailplatform_wrapper .col-sm-1,
+#mailplatform_wrapper .col-sm-10,
+#mailplatform_wrapper .col-sm-11,
+#mailplatform_wrapper .col-sm-12,
+#mailplatform_wrapper .col-sm-2,
+#mailplatform_wrapper .col-sm-3,
+#mailplatform_wrapper .col-sm-4,
+#mailplatform_wrapper .col-sm-5,
+#mailplatform_wrapper .col-sm-6,
+#mailplatform_wrapper .col-sm-7,
+#mailplatform_wrapper .col-sm-8,
+#mailplatform_wrapper .col-sm-9,
+#mailplatform_wrapper .col-xs-1,
+#mailplatform_wrapper .col-xs-10,
+#mailplatform_wrapper .col-xs-11,
+#mailplatform_wrapper .col-xs-12,
+#mailplatform_wrapper .col-xs-2,
+#mailplatform_wrapper .col-xs-3,
+#mailplatform_wrapper .col-xs-4,
+#mailplatform_wrapper .col-xs-5,
+#mailplatform_wrapper .col-xs-6,
+#mailplatform_wrapper .col-xs-7,
+#mailplatform_wrapper .col-xs-8,
+#mailplatform_wrapper .col-xs-9 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+#mailplatform_wrapper.wrap {
+  overflow: hidden;
+}
+#mailplatform_wrapper .row {
+  margin-right: -30px;
+  margin-left: -30px;
+  margin-top: 30px;
+}
+#mailplatform_wrapper .row-table {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+#mailplatform_wrapper .row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+#mailplatform_wrapper .sidebar-box {
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 3px 3px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+#mailplatform_wrapper .sidebar-box:last-child {
+  margin-bottom: 3px;
+}
+#mailplatform_wrapper .sidebar-box .tablenav {
+  padding: 0 15px;
+}
+#mailplatform_wrapper .sidebar-box .tablenav.top {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+#mailplatform_wrapper .sidebar-box .tablenav.bottom {
+  border-top: 1px solid #ddd;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+#mailplatform_wrapper .sidebar-box table.widefat {
+  border: 0;
+  box-shadow: none;
+}
+#mailplatform_wrapper .sidebar-box input[type=text],
+#mailplatform_wrapper .sidebar-box select {
+  width: 100%;
+}
+#mailplatform_wrapper .tablenav-pages input.current-page {
+  width: auto;
+}
+#mailplatform_wrapper .sidebar-box.sidebar-dark {
+  box-shadow: 0 2px 0px 0 rgba(250, 250, 250, 0.15);
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  background: #282828;
+  color: #fafafa;
+}
+#mailplatform_wrapper .sidebar-box .sidebar-header {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#mailplatform_wrapper .sidebar-box.sidebar-dark .sidebar-header {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.1);
+}
+#mailplatform_wrapper .sidebar-box h2 {
+  font-weight: 300;
+  font-size: 20px;
+}
+#mailplatform_wrapper .sidebar-box.sidebar-dark h2 {
+  color: #fafafa;
+}
+#mailplatform_wrapper .mp_input_group:last-child {
+  margin-bottom: 0px;
+}
+#mailplatform_wrapper .mp_input_group > label,
+#mailplatform_wrapper .mp_input_group > div {
+  display: block;
+  padding: 8px 0;
+}
+#mailplatform_wrapper .mp_input_group .mp_hover_label {
+  padding: 8px 3px 8px 8px;
+}
+#mailplatform_wrapper .mp_input_group .mp_hover_label,
+#mailplatform_wrapper .mp_checkbox_group label {
+  position: relative;
+}
+#mailplatform_wrapper .mp_radio {
+  display: inline-block;
+  margin-right: 10px;
+  min-width: 80px;
+}
+#mailplatform_wrapper .mp_radio input {
+  padding: 0;
+}
+#mailplatform_wrapper .mp_checkbox_group label:after,
+#mailplatform_wrapper .mp_checkbox_group label:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 47px;
+  height: 47px;
+  background-position: left center;
+  background-size: 14px;
+  background-repeat: no-repeat;
+}
+#mailplatform_wrapper .mp_checkbox_group label.mp_hover_label:after,
+#mailplatform_wrapper .mp_checkbox_group label.mp_hover_label:before {
+  left: 8px;
+}
+#mailplatform_wrapper .mp_checkbox_group label:after {
+  display: none;
+  background-image: url(checked_checkbox.png);
+}
+#mailplatform_wrapper .mp_checkbox_group label:before {
+  display: block;
+  background-image: url(unchecked_checkbox.png);
+}
+#mailplatform_wrapper .mp_input_group .mp_hover_label:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+#mailplatform_wrapper .mp_input_group input[type=checkbox] {
+  display: none;
+}
+#mailplatform_wrapper .mp_input_group input[type=checkbox]:checked + .mp_hover_label {
+  background: #0073aa;
+  color: #fff;
+}
+#mailplatform_wrapper .mp_input_group input[type=checkbox]:checked + .mp_hover_label input {
+  color: #fff;
+}
+#mailplatform_wrapper .mp_input_group input[type=checkbox]:checked + .mp_hover_label:hover {
+  background: #006290;
+}
+#mailplatform_wrapper .mp_checkbox_group input[type=checkbox]:checked + label:after {
+  display: block;
+}
+#mailplatform_wrapper .mp_checkbox_group input[type=checkbox]:checked + label:before {
+  display: none;
+}
+#mailplatform_wrapper .mp_input_group .mp_hover_label:after {
+  display: none;
+}
+#mailplatform_wrapper .mp_input_group .mp_hover_label:before {
+  padding-left: 36px;
+}
+#mailplatform_wrapper .mp_input_group p.helper {
+  margin: 0;
+}
+#mailplatform_wrapper .mp_input_group .mp_label {
+  display: block;
+  float: left;
+  width: 15.6%;
+  line-height: 28px;
+  top: -1px;
+  position: relative;
+}
+#mailplatform_wrapper .mp_input_group .mp_hover_label .mp_label {
+  width: 15%;
+}
+#mailplatform_wrapper .mp_checkbox_group label .mp_label {
+  padding-left: 28px;
+  box-sizing: border-box;
+}
+#mailplatform_wrapper .mp_input_group .mp_select {
+  display: inline-block;
+  width: 84%;
+}
+#mailplatform_wrapper .mp_input_group .mp_select input,
+#mailplatform_wrapper .mp_input_group .mp_select select {
+  outline: 0;
+  border: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+#mailplatform_wrapper .mp_input_group .mp_select input.regular-text {
+  padding: 5px 8px;
+}
+#mailplatform_wrapper .mp_input_group input[type=checkbox]:checked + label .mp_select select {
+  color: #fff;
+}
+#mailplatform_wrapper .mp_input_group input[type=checkbox]:checked + label .mp_select select option {
+  color: #282828;
+  background: #fff;
+}
+#mailplatform_wrapper pre.mp_message {
+  margin: 0;
+  margin-top: 5px;
+}
+#mailplatform_wrapper .mp_message {
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+#mailplatform_wrapper .mp_message h3 {
+  padding: 0px;
+  margin: 0px;
+  color: #282828;
+}
+#mailplatform_wrapper .mp_message small {
+  display: block;
+  font-style: italic;
+}
+#mailplatform_wrapper .mp_message strong {
+  display: block;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  color: #000000;
+}
+#mailplatform_wrapper .mp_message.mp_error {
+  background: rgba(255, 104, 102, 0.1);
+  border-color: rgba(255, 104, 102, 0.2);
+}
+#mailplatform_wrapper .mp_message.mp_error strong {
+  color: #BF4E4D;
+  border-color: rgba(255, 104, 102, 0.2);
+}
+#mailplatform_wrapper .mp_message.mp_success {
+  background: rgba(48, 136, 48, 0.1);
+  border-color: rgba(48, 136, 48, 0.2);
+}
+#mailplatform_wrapper .mp_message.mp_success strong {
+  color: #308830;
+  border-color: rgba(48, 136, 48, 0.2);
+}
+#mailplatform_wrapper .mp_dropdown_group {
+  position: relative;
+}
+#mailplatform_wrapper .mp_dropdown_group .mp_dropdown {
+  position: absolute;
+  right: 4px;
+  top: 9px;
+  background: rgba(0, 0, 0, 0.1);
+  width: 29px;
+  height: 29px;
+  cursor: default;
+  background-position: center;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-image: url(arrow.png);
+}
+#mailplatform_wrapper .mp_dropdown_group .mp_dropdown ul {
+  position: absolute;
+  top: 29px;
+  right: 0;
+  display: none;
+  box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 3px 3px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  margin: 0;
+  border-top: 0;
+  width: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 400px;
+}
+#mailplatform_wrapper .mp_dropdown_group .mp_dropdown ul li {
+  display: block;
+  margin: 0;
+}
+#mailplatform_wrapper .mp_dropdown_group .mp_dropdown ul li:last-child a {
+  border-radius: 0 0 3px 3px;
+}
+#mailplatform_wrapper .mp_dropdown_group .mp_dropdown ul li a {
+  display: block;
+  text-decoration: none;
+  color: #282828;
+  padding: 5px;
+}
+#mailplatform_wrapper .mp_dropdown_group .mp_dropdown ul li a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+#mailplatform_wrapper .mp_dropdown_group .mp_dropdown:hover ul {
+  display: block;
+}
+#mailplatform_wrapper .col-md-4 img {
+  max-width: 100%;
+}
 @media (min-width: 992px) {
-    .col-md-8 {
-        float: left;
-        width: 100%;
-        margin-right: -35%;
-        padding-right: 37%;
-        box-sizing: border-box;
-    }
-
-    .col-md-4 {
-        float: left;
-        border-left: 1px solid rgba(0, 0, 0, .1);
-        width: 35%;
-        box-sizing: border-box;
-    }
-}
-
-@media (min-width: 1240px) {
-    .col-md-8 {
-        float: left;
-        width: 100%;
-        margin-right: -25%;
-        padding-right: 27%;
-        box-sizing: border-box;
-    }
-
-    .col-md-4 {
-        float: left;
-        border-left: 1px solid rgba(0, 0, 0, .1);
-        width: 25%;
-        box-sizing: border-box;
-    }
-}
-
-.mp_input_group .handle {
-    width: 25px;
-    height: 25px;
+  #mailplatform_wrapper .col-md-8 {
     float: left;
+    width: 100%;
+    margin-right: -35%;
+    padding-right: 37%;
     box-sizing: border-box;
-    cursor: move;
+  }
+  #mailplatform_wrapper .col-md-4 {
+    float: left;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    width: 35%;
+    box-sizing: border-box;
+  }
 }
-
-.mp_input_group .handle .bar {
-    width:100%;
-    height:3px;
-    background: rgba(0,0,0,.5);
-    display: block;
-    margin-top:4px;
+@media (min-width: 1240px) {
+  #mailplatform_wrapper .col-md-8 {
+    float: left;
+    width: 100%;
+    margin-right: -25%;
+    padding-right: 27%;
+    box-sizing: border-box;
+  }
+  #mailplatform_wrapper .col-md-4 {
+    float: left;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    width: 25%;
+    box-sizing: border-box;
+  }
 }
-
-.mp_input_group .handle .bar:last-child {
-    margin-bottom:0;
+#mailplatform_wrapper .mp_input_group .handle {
+  width: 25px;
+  height: 25px;
+  float: left;
+  box-sizing: border-box;
+  cursor: move;
 }
-
-.mp_input_group .handle ~ .mp_label {
-    padding-left: 40px;
+#mailplatform_wrapper .mp_input_group .handle .bar {
+  width: 100%;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+  margin-top: 4px;
 }
-
-.mp_input_group .handle ~ .mp_select {
-    width: 81%;
+#mailplatform_wrapper .mp_input_group .handle .bar:last-child {
+  margin-bottom: 0;
 }
-
-.mp_checkbox_group.mp_field_input label.mp_hover_label:after, .mp_checkbox_group.mp_field_input label.mp_hover_label:before {
-    left: 45px;
-    top: -3px;
+#mailplatform_wrapper .mp_input_group .handle ~ .mp_label {
+  padding-left: 40px;
 }
-
+#mailplatform_wrapper .mp_input_group .handle ~ .mp_select {
+  width: 81%;
+}
+#mailplatform_wrapper .mp_checkbox_group.mp_field_input label.mp_hover_label:after,
+#mailplatform_wrapper .mp_checkbox_group.mp_field_input label.mp_hover_label:before {
+  left: 45px;
+  top: -3px;
+}
 @media (max-width: 1400px) {
-    .mp_input_group .handle ~ .mp_label {
-        padding-left: 40px;
-        width: 25%;
-    }
-
-    .mp_input_group .handle ~ .mp_select {
-        width: 72%;
-    }
+  #mailplatform_wrapper .mp_input_group .handle ~ .mp_label {
+    padding-left: 40px;
+    width: 25%;
+  }
+  #mailplatform_wrapper .mp_input_group .handle ~ .mp_select {
+    width: 72%;
+  }
 }
-
 @media (max-width: 1240px) {
-    .mp_input_group .mp_hover_label .mp_label {
-        width: 25%;
-        padding-left: 20px;
-    }
-
-    .mp_input_group .handle ~ .mp_label {
-        padding-left: 40px;
-    }
-
-    .mp_input_group .handle ~ .mp_select {
-        display: inline-block;
-        width: 70%;
-    }
-
-    .mp_input_group .mp_select {
-        width: 73%;
-    }
+  #mailplatform_wrapper .mp_input_group .mp_hover_label .mp_label {
+    width: 25%;
+    padding-left: 20px;
+  }
+  #mailplatform_wrapper .mp_input_group .handle ~ .mp_label {
+    padding-left: 40px;
+  }
+  #mailplatform_wrapper .mp_input_group .handle ~ .mp_select {
+    display: inline-block;
+    width: 70%;
+  }
+  #mailplatform_wrapper .mp_input_group .mp_select {
+    width: 73%;
+  }
 }
-
-.sortable-list {
-    padding: 0;
-    margin: 0;
+#mailplatform_wrapper .sortable-list {
+  padding: 0;
+  margin: 0;
 }
-
-.sortable-list li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-    z-index: 5;
+#mailplatform_wrapper .sortable-list li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  z-index: 5;
 }
-.sortable-list li.ui-sortable-placeholder {
-    outline: 2px dashed #ddd;
-    background: #eee;
-    visibility: visible !important;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 10;
+#mailplatform_wrapper .sortable-list li.ui-sortable-placeholder {
+  outline: 2px dashed #ddd;
+  background: #eee;
+  visibility: visible !important;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
 }

@@ -119,7 +119,7 @@ switch ($type) {
 }
 
 ?>
-<div class="wrap">
+<div class="wrap" id="mailplatform_wrapper">
     <h2><?php echo $view_title ?> <?php if ($has_backlink) { ?><a href="?page=mailplatform-list-options"
                                                                   class="add-new-h2"><?php _e('Back to list', 'mailplatform') ?></a><?php } ?>
     </h2>
