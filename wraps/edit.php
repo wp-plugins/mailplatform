@@ -2,7 +2,7 @@
       method="post">
     <div class="sidebar-box">
         <div class="sidebar-header">
-            <h2><?php echo __('Visible Fields', 'mailplatform') ?></h2>
+            <h2><?php echo __( 'Visible Fields', 'mailplatform' ) ?></h2>
         </div>
         <div class="sidebar-content">
             <?php settings_fields('mailplatform-db-customfields'); ?>
