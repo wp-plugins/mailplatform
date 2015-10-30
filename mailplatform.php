@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: MailPlatform
-Version:     1.4.6
+Version:     1.4.7
 License:     GPLv2 or later
 Author:      MailPlatform
 Author URI:  http://mailplatform.dk/
@@ -29,17 +29,25 @@ register_deactivation_hook( __FILE__, 'jal_uninstall' );
  */
 function mailplatform_register_my_setting() {
 
-	register_setting( 'mailplatform-db-options', 'mailplatform_username' );
-	register_setting( 'mailplatform-db-options', 'mailplatform_token' );
-	register_setting( 'mailplatform-db-options', 'mailplatform_xml_path' );
+	$options = array(
+		'username'      => 'mailplatform_api_username',
+		'token'         => 'mailplatform_api_token',
+		'xml_path'      => 'mailplatform_api_xml_path',
+		'posts'         => 'mailplatform_feed_posts',
+		'pages'         => 'mailplatform_feed_pages',
+		'woocommerce'   => 'mailplatform_feed_woocommerce',
+		'listid'        => 'mailplatform_listid',
+		'custom_fields' => 'mailplatform_custom_fields',
+	);
 
-	// Feed options
-	register_setting( 'mailplatform-db-options', 'mailplatform_posts' );
-	register_setting( 'mailplatform-db-options', 'mailplatform_pages' );
-	register_setting( 'mailplatform-db-options', 'mailplatform_woocommerce' );
-
-	register_setting( 'mailplatform-db-customfields', 'mailplatform_listid' );
-	register_setting( 'mailplatform-db-customfields', 'mailplatform_custom_fields' );
+	register_setting( 'mailplatform-db-api-options', $options['username'] );
+	register_setting( 'mailplatform-db-api-options', $options['token'] );
+	register_setting( 'mailplatform-db-api-options', $options['xml_path'] );
+	register_setting( 'mailplatform-db-feed-options', $options['posts'] );
+	register_setting( 'mailplatform-db-feed-options', $options['pages'] );
+	register_setting( 'mailplatform-db-feed-options', $options['woocommerce'] );
+	register_setting( 'mailplatform-db-options', $options['listid'] );
+	register_setting( 'mailplatform-db-options', $options['custom_fields'] );
 
 	wp_enqueue_style( 'mailplatform-plugin-css', mailplatform__PLUGIN_PATH . 'content/mailplatform.plugin.css', '1.0', true );
 	wp_enqueue_script( 'mailplatform-plugin-js', mailplatform__PLUGIN_PATH . 'content/mailplatform.plugin.js', array(
