@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: MailPlatform
-Version:     1.4.7
+Version:     1.4.8
 License:     GPLv2 or later
 Author:      MailPlatform
 Author URI:  http://mailplatform.dk/

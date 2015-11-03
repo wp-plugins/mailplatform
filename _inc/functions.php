@@ -175,7 +175,7 @@ function mailplatform_save_data( $form = array() ) {
 	if ( $form['id'] != 0 ) {
 		$rtrn = $wpdb->update(
 			$table_name,
-			[
+			array(
 				'title'              => $form['title'],
 				'short_description'  => $form['short_description'],
 				'url'                => $form['url'],
@@ -192,13 +192,13 @@ function mailplatform_save_data( $form = array() ) {
 				'field_types'        => $form['field_types'],
 				'field_titles'       => $form['field_titles'],
 				'field_position'     => $form['field_position']
-			],
-			[ 'id' => $form['id'] ]
+			),
+			array( 'id' => $form['id'] )
 		);
 	} else {
 		$rtrn = $wpdb->insert(
 			$table_name,
-			[
+			array(
 				'mailplatform_listid' => $form['mailplatform_listid'],
 				'title'               => $form['title'],
 				'short_description'   => $form['short_description'],
@@ -216,7 +216,7 @@ function mailplatform_save_data( $form = array() ) {
 				'field_types'         => $form['field_types'],
 				'field_titles'        => $form['field_titles'],
 				'field_position'      => $form['field_position']
-			]
+			)
 		);
 	}
 
